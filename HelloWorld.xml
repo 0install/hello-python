@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<interface xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+  <name>HelloWorld</name>
+  <summary>minimal demonstration package for 0release</summary>
+  <description>
+    This program outputs the message "Hello World". You can create new releases of it
+    using 0release.
+  </description>
+
+  <homepage>http://0install.net/0release.xml</homepage>
+
+  <feed-for interface='http://0install.net/tests/HelloWorld.xml'/>
+
+  <group main='hello.py'>
+    <implementation id="." version="0.1-pre"/>
+  </group>
+</interface>
