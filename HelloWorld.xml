@@ -11,7 +11,15 @@
 
   <feed-for interface='http://0install.net/tests/HelloWorld.xml'/>
 
-  <group main='hello.py'>
-    <implementation id="." version="0.1-pre"/>
-  </group>
+  <!--
+    Note: The main attribute here is to support 0launch < 0.53.
+    Newer versions will use the <command>.
+  -->
+  <implementation main='hello.py' id="." version="0.1-pre">
+    <command name='run' path='hello.py'>
+      <runner interface='http://repo.roscidus.com/python/python'>
+	<version before='3'/>
+      </runner>
+    </command>
+  </implementation>
 </interface>
