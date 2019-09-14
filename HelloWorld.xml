@@ -15,7 +15,7 @@
     Note: The main attribute here is to support 0launch < 0.53.
     Newer versions will use the <command>.
   -->
-  <implementation main='hello.py' id="." version="0.1-pre">
+  <implementation main='hello.py' id="." license="Public Domain" version="0.1-pre">
     <command name='run' path='hello.py'>
       <runner interface='http://repo.roscidus.com/python/python'>
 	<version before='3'/>
